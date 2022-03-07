@@ -12,10 +12,13 @@ pub trait CarInfo {
     #[view(getVIN)]
     #[storage_mapper("vin")]
     fn vin_number(&self, vin:&ManagedAddress) -> SingleValueMapper<ManagedBuffer>;
+
+    #[view(getMeasureUnit)]
+    #[storage_mapper("unit")]
+    fn measure_unit(&self, measure:&ManagedAddress) -> SingleValueMapper<ManagedBuffer>;
+
     #[init]
     fn init(&self) {
-         let caller = self.blockchain().get_caller();
-        self.mileage(&caller).update(|milleage| *milleage = BigUint::zero());
     }
 
 
@@ -25,7 +28,14 @@ pub trait CarInfo {
          self.vin_number(&caller).update(|vin| *vin= vinb );
         Ok(())
     }
-   
+
+    #[endpoint(addMeasureUnit)]
+    fn add_unit(&self,measure: ManagedBuffer) -> SCResult<()>{
+        let caller = self.blockchain().get_caller();
+        self.measure_unit(&caller).update(|unit| *unit= measure );
+       Ok(())
+   }
+
     #[endpoint(addMileage)]
     fn add_mileage(&self, value: BigUint) -> SCResult<()> {
         let caller = self.blockchain().get_caller();

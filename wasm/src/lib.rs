@@ -7,8 +7,10 @@
 elrond_wasm_node::wasm_endpoints! {
     car
     (
+        addMeasureUnit
         addMileage
         addVIN
+        getMeasureUnit
         getMileage
         getVIN
     )
