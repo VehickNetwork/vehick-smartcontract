@@ -2,7 +2,7 @@
 ## version 0.1.0
 
 ###  Information provided
-- Car milleage
+- Car mileage
 - Timestamp
 - Vehicle Identification Number (VIN)
 
@@ -16,7 +16,7 @@ We chose to design a system in which the car is responsible for all data submitt
 2. The device reads the vehicle identification number and the odometer value on the first start.
 3. The device transmits the VIN to the smart contract and awaits confirmation.
 >Until this point, greater security is achieved by binding the address to the VIN via the smart contract call.
-4. The device listens to the car and updates the milleage value on the blockchain every 1000 kilometers or miles.
+4. The device listens to the car and updates the mileage value on the blockchain every 1000 kilometers or miles.
 
 ##### Using this aproach we don't need extra function in the smart contract for gathering back the information that was sent already. 
 
