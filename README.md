@@ -15,7 +15,7 @@ We chose to design a system in which the car is responsible for all data submitt
 1. At the assembly line, the gadget is fitted in the vehicle.
 2. The device reads the vehicle identification number and the odometer value on the first start.
 3. The device transmits the VIN to the smart contract and awaits confirmation.
->Until this point, greater security is achieved by binding the address to the VIN via the smart contract call.
+>Until this point, greater security is achieved by binding the address to the VIN via the smart contract call, this way the vehicle can be indentified by two unique addresses.
 4. The device listens to the car and updates the mileage value on the blockchain every 1000 kilometers or miles.
 
 ##### Using this aproach we don't need extra function in the smart contract for gathering back the information that was sent already. 
