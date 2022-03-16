@@ -14,7 +14,7 @@ We chose to design a system in which the car is responsible for all data submitt
 ### Main Logic
 1. The device reads the vehicle identification number on the first start.
 2. The device transmits the VIN to the smart contract.
->Until this point, greater security is achieved by binding the address to the VIN via the smart contract call, this way the vehicle can be identified by two unique addresses.So, even if someone with access to the vehicle identification number tries to spoof the data, the real automobile has that unique address to which no one has access.
+>Until this point, greater security is achieved by binding the address to the VIN via the smart contract call, this way the vehicle can be identified by two unique addresses. Only the car owns the private key of the public address.
 3. The device listens to the car and updates the mileage value on the blockchain every 1000 kilometers or miles.
 
 
