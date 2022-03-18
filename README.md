@@ -21,7 +21,8 @@ We chose to design a system in which the car is responsible for all data submitt
 #### With this approach on the blockchain we have the last value for the mileage and the corresponding timestamp. In order to form a history for a vehicle, we are collecting the data from previous transactions.
 
 
-##Devnet address:
+## Devnet address:
+
 ```
 erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug
 ````
@@ -29,7 +30,9 @@ erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug
 ```
 https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug
 ```
-```sh
+
+## Interactions:
+```
 erdpy --verbose contract call erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug --chain="D" --pem="wallets/walletKey2.pem" --gas-limit=5000000 --function --arguments --proxy="https://devnet-gateway.elrond.com" --recall-nonce --send
 
 ```
