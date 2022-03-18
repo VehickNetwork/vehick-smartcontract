@@ -25,13 +25,15 @@ pub trait CarInfo {
     #[endpoint(addVIN)]
     fn add_vin(&self,vinb: ManagedBuffer) -> SCResult<()>{
          let caller = self.blockchain().get_caller();
+         require!(self.vin_number(&caller).get().is_empty(),"Vehicle Identification Number exists!");
          self.vin_number(&caller).update(|vin| *vin= vinb );
         Ok(())
     }
 
     #[endpoint(addMeasureUnit)]
-    fn add_unit(&self,measure: ManagedBuffer) -> SCResult<()>{
+    fn add_unit(&self,measure:ManagedBuffer) -> SCResult<()>{
         let caller = self.blockchain().get_caller();
+        require!(self.measure_unit(&caller).get().is_empty(),"Measure unit exists");
         self.measure_unit(&caller).update(|unit| *unit= measure );
        Ok(())
    }
