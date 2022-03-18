@@ -18,41 +18,12 @@ We chose to design a system in which the car is responsible for all data submitt
 3. The device listens to the car and updates the mileage value on the blockchain every 1000 kilometers or miles.
 
 
-### Example 
-
-*Car address:* **vehicle.address.elrond**
-*Smart Contract address:* **sc.address.elrond**
-
-```sh
-{
-    ...
-    "receiver": sc.address.elrond
-    "sender": car.address.elrond
-    ...
-    "timestamp": timestamp
-    "data": hexEncoded(addVIN@hexEncoded(VIN))
-    
-} 
-{
-    ...
-    "receiver": sc.address.elrond
-    "sender": car.address.elrond
-    ...
-    "timestamp": timestamp
-    "data": hexEncoded(addMileage@hexEncoded(mileage))
-    
-}
-
-```
-##### We filter successful transactions and link the information together for each vehicle.
 #### With this approach on the blockchain we have the last value for the mileage and the corresponding timestamp. In order to form a history for a vehicle, we are collecting the data from previous transactions.
-
-
 
 
 Devnet address
 ```
-erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug 
+erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug
 ````
 ```sh
 erdpy --verbose contract call erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug --chain="D" --pem="wallets/walletKey2.pem" --gas-limit=5000000 --function --arguments --proxy="https://devnet-gateway.elrond.com" --recall-nonce --send
