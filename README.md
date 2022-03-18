@@ -50,8 +50,10 @@ We chose to design a system in which the car is responsible for all data submitt
 
 
 
-Devnet address: erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug 
-
+Devnet address
+```
+erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug 
+````
 ```sh
 erdpy --verbose contract call erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug --chain="D" --pem="wallets/walletKey2.pem" --gas-limit=5000000 --function --arguments --proxy="https://devnet-gateway.elrond.com" --recall-nonce --send
 
