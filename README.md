@@ -26,10 +26,10 @@ We chose to design a system in which the car is responsible for all data submitt
 ```
 erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug
 ````
-## Devnet explorer:
-```
-https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug
-```
+## Devnet Explorer:
+
+[https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug](https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug)
+
 
 ## Interactions:
 ```
