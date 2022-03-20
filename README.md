@@ -5,6 +5,7 @@
 - Car mileage
 - Timestamp
 - Vehicle Identification Number (VIN)
+- Measure Unit
 
 ### Security 
 We chose to design a system in which the car is responsible for all data submitted to the blockchain in the following order for increased security:
