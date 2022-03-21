@@ -7,20 +7,6 @@
 - Vehicle Identification Number (VIN)
 - Measure Unit
 
-### Security 
-We chose to design a system in which the car is responsible for all data submitted to the blockchain in the following order for increased security:
-- Each vehicle has a unique address in the elrond ecosystem.
-- This address must be associated with the vehicle identification number (VIN).
-
-### Main Logic
-1. The device reads the vehicle identification number on the first start.
-2. The device transmits the VIN to the smart contract.
->Until this point, greater security is achieved by binding the address to the VIN via the smart contract call, this way the vehicle can be identified by two unique addresses. Only the car owns the private key of the public address.
-3. The device listens to the car and updates the mileage value on the blockchain every 1000 kilometers or miles.
-
-
-#### With this approach on the blockchain we have the last value for the mileage and the corresponding timestamp. In order to form a history for a vehicle, we are collecting the data from previous transactions.
-
 
 ## Devnet address:
 
