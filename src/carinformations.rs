@@ -23,29 +23,28 @@ pub trait CarInfo {
 
 
     #[endpoint(addVIN)]
-    fn add_vin(&self,vinb: ManagedBuffer) -> SCResult<()>{
+    fn add_vin(&self,vinb: ManagedBuffer) {
          let caller = self.blockchain().get_caller();
          require!(self.vin_number(&caller).get().is_empty(),"Vehicle Identification Number exists!");
          self.vin_number(&caller).update(|vin| *vin= vinb );
-        Ok(())
     }
 
     #[endpoint(addMeasureUnit)]
-    fn add_unit(&self,measure:ManagedBuffer) -> SCResult<()>{
+    fn add_unit(&self,measure:ManagedBuffer) {
         let caller = self.blockchain().get_caller();
         require!(self.measure_unit(&caller).get().is_empty(),"Measure unit exists");
         self.measure_unit(&caller).update(|unit| *unit= measure );
-       Ok(())
+       
    }
 
     #[endpoint(addMileage)]
-    fn add_mileage(&self, value: BigUint) -> SCResult<()> {
+    fn add_mileage(&self, value: BigUint) {
         let caller = self.blockchain().get_caller();
         let prev_mileage= self.mileage(&caller).get();
         require!(!self.vin_number(&caller).get().is_empty(),"Need to add VIN First");
         require!(prev_mileage < value,"Mileage unreal");
         self.mileage(&caller).update(|mileage| *mileage = value);
-        Ok(())
+
     }
 
 
