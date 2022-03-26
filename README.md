@@ -11,11 +11,11 @@
 ## Devnet address:
 
 ```
-erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug
+erd1qqqqqqqqqqqqqpgqw52fmznyqkl3vxpshgq9nhrw5g438yr40huqrna6h2
 ````
 ## Devnet Explorer:
 
-[https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug](https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgq83mmnl478cywl0fsxzuvu32f8enzm5za0huqq2p7ug)
+[https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqw52fmznyqkl3vxpshgq9nhrw5g438yr40huqrna6h2](https://devnet-explorer.elrond.com/accounts/erd1qqqqqqqqqqqqqpgqw52fmznyqkl3vxpshgq9nhrw5g438yr40huqrna6h2)
 
 
 ## Interactions:
